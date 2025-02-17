@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="feedback-form">
+    <h2>Feedback Form</h2>
+    <form action="#" method="post">
+        <label for="name">Name </label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email </label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone </label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label>Rating</label>
+        <div class="rating-group">
+            <label><input type="radio" name="rating" value="1" required> 1 </label>
+            <label><input type="radio" name="rating" value="2"> 2 </label>
+            <label><input type="radio" name="rating" value="3"> 3 </label>
+            <label><input type="radio" name="rating" value="4"> 4 </label>
+            <label><input type="radio" name="rating" value="5"> 5 </label>
+        </div>
+
+        <label for="questions">Questions regarding product or service</label>
+        <textarea id="questions" name="questions" rows="4" required></textarea>
+
+        <label for="comments">Additional Comments (optional)</label>
+        <textarea id="comments" name="comments" rows="4"></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+</body>
+</html>
