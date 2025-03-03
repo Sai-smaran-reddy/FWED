@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-4">
+        <div class="card shadow p-3" style="max-width: 400px; margin: auto;">
+            <h4 class="text-center mb-3">Feedback Form</h4>
+            <form action="#" method="post">
+                <div class="mb-2">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" id="name" name="name" class="form-control" required>
+                </div>
+                <div class="mb-2">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" id="email" name="email" class="form-control" required>
+                </div>
+                <div class="mb-2">
+                    <label for="phone" class="form-label">Phone</label>
+                    <input type="tel" id="phone" name="phone" class="form-control" required>
+                </div>
+                <div class="mb-2">
+                    <label class="form-label">Rating</label>
+                    <div class="d-flex justify-content-between">
+                        <input class="form-check-input" type="radio" name="rating" value="1" required> 1
+                        <input class="form-check-input" type="radio" name="rating" value="2"> 2
+                        <input class="form-check-input" type="radio" name="rating" value="3"> 3
+                        <input class="form-check-input" type="radio" name="rating" value="4"> 4
+                        <input class="form-check-input" type="radio" name="rating" value="5"> 5
+                    </div>
+                </div>
+                <div class="mb-2">
+                    <label for="questions" class="form-label">Questions</label>
+                    <textarea id="questions" name="questions" rows="2" class="form-control" required></textarea>
+                </div>
+                <div class="mb-2">
+                    <label for="comments" class="form-label">Comments (optional)</label>
+                    <textarea id="comments" name="comments" rows="2" class="form-control"></textarea>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary btn-sm">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
