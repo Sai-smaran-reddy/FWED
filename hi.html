@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spice Haven</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff5e6;
+            text-align: center;
+        }
+        .header {
+            background-color: #8B0000;
+            color: white;
+            padding: 20px 0;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        .navbar {
+            background-color: #5A0000;
+            padding: 10px;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+        .content-box {
+            width: 70%;
+            margin: 30px auto;
+            border-radius: 8px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+            background-color: white;
+            padding: 25px;
+        }
+        ul {
+            list-style-type: square;
+            text-align: left;
+            padding-left: 40px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #999;
+            padding: 12px;
+            text-align: center;
+        }
+        th {
+            background-color: #8B0000;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f4e1d2;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">Welcome to Spice Haven</div>
+    
+    <div class="navbar">
+        <a href="#about">About Us</a>
+        <a href="#dishes">Our Dishes</a>
+        <a href="reservation.html">Reservations</a>
+    </div>
+    
+    <div class="content-box" id="about">
+        <h2>About Us</h2>
+        <p>At Spice Haven, we bring you the best flavors from around the world, prepared with passion and authenticity. Indulge in our carefully curated dishes that guarantee an unforgettable culinary experience.</p>
+    </div>
+    
+    <div class="content-box" id="dishes">
+        <h2>Our Signature Cuisines</h2>
+        <ul>
+            <li>Middle Eastern</li>
+            <li>Thai</li>
+            <li>Greek</li>
+            <li>Japanese</li>
+            <li>Caribbean</li>
+        </ul>
+    </div>
+    
+    <div class="content-box">
+        <h2>Menu</h2>
+        <table>
+            <tr>
+                <th>Dish</th>
+                <th>Price</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>Shawarma Platter</td>
+                <td>$14</td>
+                <td>Marinated chicken served with pita, hummus, and fresh veggies.</td>
+            </tr>
+            <tr>
+                <td>Pad Thai</td>
+                <td>$13</td>
+                <td>Classic Thai stir-fried noodles with shrimp, tofu, and peanuts.</td>
+            </tr>
+            <tr>
+                <td>Sushi Combo</td>
+                <td>$18</td>
+                <td>Assorted fresh sushi rolls with soy sauce and wasabi.</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

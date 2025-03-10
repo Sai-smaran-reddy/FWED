@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wave Transition</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .dark-section {
+            background-color: #1c1c1c;
+            color: white;
+            padding: 50px 0;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 50px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .text-section {
+            max-width: 500px;
+            text-align: left;
+        }
+
+        .highlight {
+            color: #2196F3;
+            font-size: 6rem;
+            font-weight: bold;
+            display: inline-block;
+        }
+
+        .lead-text {
+            font-size: 2rem;
+            font-weight: bold;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background-color: #2196F3;
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background-color: #1769aa;
+        }
+
+        .custom-shape-divider-bottom-1739860938 {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+            transform: rotate(180deg);
+        }
+
+        .custom-shape-divider-bottom-1739860938 svg {
+            position: relative;
+            display: block;
+            width: calc(100% + 1.3px);
+            height: 150px;
+        }
+
+        .custom-shape-divider-bottom-1739860938 .shape-fill {
+            fill: #FFFFFF;
+        }
+
+        .white-section {
+            background-color: white;
+            padding: 50px 0;
+            text-align: center;
+            color: black;
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Hover effects using Bootstrap classes */
+        .card:hover {
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+            transition: box-shadow 0.3s ease;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Dark Section -->
+    <div class="dark-section">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">SRC</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <section class="hero">
+            <div class="text-section">
+                <span class="highlight">W</span><span class="lead-text">e Collect High<br>Quality Leads</span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vehicula mauris vel justo tincidunt
+                    cursus.</p>
+                <button class="btn btn-primary" data-bs-toggle="tooltip" title="Get in touch with us!">Contact
+                    Us</button>
+            </div>
+            <div>
+                <img src="https://media.giphy.com/media/3o7aCTfyhYawdOXcFW/giphy.gif" alt="GIF" class="img-fluid" width="350">
+            </div>
+        </section>
+
+        <!-- Custom Wave Divider -->
+        <div class="custom-shape-divider-bottom-1739860938">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+    </div>
+
+    <!-- White Section -->
+    <div class="white-section">
+        <h2>Welcome to the White Section</h2>
+        <p>This is a new section with a white background after the wave effect.</p>
+    </div>
+    <div class="mt-5">
+        <div class="container-fluid d-flex justify-content-center align-items-center">
+            <div class="row d-flex justify-content-center align-items-center">
+                <h1 class="text-capitalize justify-content-around">What we will do for your business</h1>
+            </div>
+        </div>
+        <div class="container-fluid mt-5 mb-5">
+            <div class="row justify-content-center">
+                <div class="col-sm-12 col-md-4 d-flex justify-content-center mb-4">
+                    <div class="card shadow" style="width: 18rem">
+                        <img src="C:\Users\smara\OneDrive\Pictures\Screenshots 1\2024-12-12.png" class="card-img-top" alt="..." height="270" />
+                        <div
+                            class="card-body d-flex justify-content-center align-content-center flex-column align-items-center text-center">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 d-flex justify-content-center mb-4">
+                    <div class="card shadow" style="width: 18rem">
+                        <img src="C:\Users\smara\OneDrive\Pictures\Screenshots 1\2024-12-12.png" class="card-img-top" alt="..." height="270" />
+                        <div
+                            class="card-body d-flex justify-content-center align-content-center flex-column align-items-center text-center">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 d-flex justify-content-center mb-4">
+                    <div class="card shadow" style="width: 18rem">
+                        <img src="C:\Users\smara\OneDrive\Pictures\Screenshots 1\2024-12-12.png" class="card-img-top" alt="..." height="270" />
+                        <div
+                            class="card-body d-flex justify-content-center align-content-center flex-column align-items-center text-center">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <h1 class="container-fluid my-5" align="center">Generating New Customers Via Online Mode</h1>
+        <div class="mx-auto row g-5 mb-5 d-flex justify-content-center align-items-center">
+            <div class="col-xl-6 col-md-12">
+                <div class="d-flex px-1 py-5 shadow overflow-hidden">
+                    <img src="C:\Users\smara\OneDrive\Pictures\Screenshots 1\2024-12-12.png" alt="" class="image-fluid" height="150" />
+                    <div class="row">
+                        <p class="mb-3 fw-bolder mx-lg-1">Lorem ipsum dolor sit amet.</p>
+                        <p class="mx-lg-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut in nulla nisi
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-6 col-md-12">
+                <div class="d-flex px-3 py-5 shadow overflow-hidden">
+                    <img src="C:\Users\smara\OneDrive\Pictures\Screenshots 1\2024-12-12.png" alt="" class="image-fluid" height="150" />
+                    <div class="row">
+                        <p class="mb-3 fw-bolder mx-lg-1">Lorem ipsum dolor sit amet.</p>
+                        <p class="mx-lg-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut in nulla nisi
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mx-auto row g-5 mb-5 d-flex justify-content-center align-items-center">
+            <div class="col-xl-6 col-md-12">
+                <div class="d-flex px-1 py-5 shadow overflow-hidden">
+                    <img src="C:\Users\smara\OneDrive\Pictures\Screenshots 1\2024-12-12.png" alt="" class="image-fluid" height="150" />
+                    <div class="row">
+                        <p class="mb-3 fw-bolder mx-lg-1">Lorem ipsum dolor sit amet.</p>
+                        <p class="mx-lg-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut in nulla nisi
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-6 col-md-12">
+                <div class="d-flex px-3 py-5 shadow overflow-hidden">
+                    <img src="C:\Users\smara\OneDrive\Pictures\Screenshots 1\2024-12-12.png" alt="" class="image-fluid" height="150" />
+                    <div class="row">
+                        <p class="mb-3 fw-bolder mx-lg-1">Lorem ipsum dolor sit amet.</p>
+                        <p class="mx-lg-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut in nulla nisi
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div>
+        <div id="carouselExample" class="carousel slide bg-black">
+            <h1 align="center" class="text-2xl text-white text">What Client Say About Us</h1>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="container-fluid mt-5 mb-5">
+                        <div class="row justify-content-center">
+                            <div class="col-sm-12 col-md-4 d-flex justify-content-center mb-4">
+                                <div class="card shadow" style="width: 18rem">
+                                    <img src="C:\Users\smara\OneDrive\Pictures\Screenshots 1\2024-12-12.png" class="card-img-top" alt="..." height="270" />
+                                    <div
+                                        class="card-body d-flex justify-content-center align-content-center flex-column align-items-center text-center">
+                                        <h5 class="card-title">Keshav</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the card's content.</p>
+                                        <a href="#">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-4 d-flex justify-content-center mb-4">
+                                <div class="card shadow" style="width: 18rem">
+                                    <img src="C:\Users\smara\OneDrive\Pictures\Screenshots 1\2024-12-12.png" class="card-img-top" alt="..." height="270" />
+                                    <div
+                                        class="card-body d-flex justify-content-center align-content-center flex-column align-items-center text-center">
+                                        <h5 class="card-title">Client 2</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the card's content.</p>
+                                        <a href="#">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-4 d-flex justify-content-center mb-4">
+                                <div class="card shadow" style="width: 18rem">
+                                    <img src="C:\Users\smara\OneDrive\Pictures\Screenshots 1\2024-12-12.png" class="card-img-top" alt="..." height="270" />
+                                    <div
+                                        class="card-body d-flex justify-content-center align-content-center flex-column align-items-center text-center">
+                                        <h5 class="card-title">Client 3</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the card's content.</p>
+                                        <a href="#">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container-fluid mt-5 mb-5">
+                        <div class="row justify-content-center">
+                            <div class="col-sm-12 col-md-4 d-flex justify-content-center mb-4">
+                                <div class="card shadow" style="width: 18rem">
+                                    <img src="C:\Users\smara\OneDrive\Pictures\Screenshots 1\2024-12-12.png" class="card-img-top" alt="..." height="270" />
+                                    <div
+                                        class="card-body d-flex justify-content-center align-content-center flex-column align-items-center text-center">
+                                        <h5 class="card-title">Client 4</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the card's content.</p>
+                                        <a href="#">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-4 d-flex justify-content-center mb-4">
+                                <div class="card shadow" style="width: 18rem">
+                                    <img src="C:\Users\smara\OneDrive\Pictures\Screenshots 1\2024-12-12.png" class="card-img-top" alt="..." height="270" />
+                                    <div
+                                        class="card-body d-flex justify-content-center align-content-center flex-column align-items-center text-center">
+                                        <h5 class="card-title">Clinet 5</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the card's content.</p>
+                                        <a href="#">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-4 d-flex justify-content-center mb-4">
+                                <div class="card shadow" style="width: 18rem">
+                                    <img src="C:\Users\smara\OneDrive\Pictures\Screenshots 1\2024-12-12.png" class="card-img-top" alt="..." height="270" />
+                                    <div
+                                        class="card-body d-flex justify-content-center align-content-center flex-column align-items-center text-center">
+                                        <h5 class="card-title">Client 6</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the card's content.</p>
+                                        <a href="#">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container-fluid mt-5 mb-5">
+                        <div class="row justify-content-center">
+                            <div class="col-sm-12 col-md-4 d-flex justify-content-center mb-4">
+                                <div class="card shadow" style="width: 18rem">
+                                    <img src="C:\Users\smara\OneDrive\Pictures\Screenshots 1\2024-12-12.png" class="card-img-top" alt="..." height="270" />
+                                    <div
+                                        class="card-body d-flex justify-content-center align-content-center flex-column align-items-center text-center">
+                                        <h5 class="card-title">Clinet 7</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the card's content.</p>
+                                        <a href="#">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-4 d-flex justify-content-center mb-4">
+                                <div class="card shadow" style="width: 18rem">
+                                    <img src="C:\Users\smara\OneDrive\Pictures\Screenshots 1\2024-12-12.png" class="card-img-top" alt="..." height="270" />
+                                    <div
+                                        class="card-body d-flex justify-content-center align-content-center flex-column align-items-center text-center">
+                                        <h5 class="card-title">Client 8</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the card's content.</p>
+                                        <a href="#">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-4 d-flex justify-content-center mb-4">
+                                <div class="card shadow" style="width: 18rem">
+                                    <img src="C:\Users\smara\OneDrive\Pictures\Screenshots 1\2024-12-12.png" class="card-img-top" alt="..." height="270" />
+                                    <div
+                                        class="card-body d-flex justify-content-center align-content-center flex-column align-items-center text-center">
+                                        <h5 class="card-title">Client 9</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the card's content.</p>
+                                        <a href="#">
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <footer class="text-center text-lg-start text-white bg-black">
+        <div class="container p-4 pb-0">
+            <section class="">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">Our More Services</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae modi cum ipsam ad, illo
+                            possimus laborum ut reiciendis obcaecati. Ducimus, quas. Corrupti, pariatur eaque?
+                            Reiciendis assumenda iusto sapiente inventore animi?</p>
+                    </div>
+                    <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">About</h5>
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="#" class="text-white">Founders</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-white">Co-FOunders</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-white">Organizers</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-white">Employees</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">Contact</h5>
+
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="#!" class="text-white">Contact - 1</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Contact - 2</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">Links</h5>
+
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="#!" class="text-white">Link 1</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Link 2</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Link 3</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Link 4</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">Links</h5>
+
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="#!" class="text-white">Link 1</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Link 2</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Link 3</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Link 4</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+                </div>
+                <!--Grid row-->
+            </section>
+            <!-- Section: Links -->
+
+            <hr class="mb-4" />
+
+            <!-- Section: CTA -->
+            <section class="">
+                <p class="d-flex justify-content-center align-items-center">
+                    <span class="me-3">Register for free</span>
+                    <button type="button" class="btn btn-outline-light btn-rounded">Sign up!</button>
+                </p>
+            </section>
+            <!-- Section: CTA -->
+
+            <hr class="mb-4" />
+
+            <!-- Section: Social media -->
+            <section class="mb-4 text-center">
+                <!-- Facebook -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-facebook-f"></i></a>
+
+                <!-- Twitter -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-twitter"></i></a>
+
+                <!-- Google -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-google"></i></a>
+
+                <!-- Instagram -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-instagram"></i></a>
+
+                <!-- Linkedin -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-linkedin-in"></i></a>
+
+                <!-- Github -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-github"></i></a>
+            </section>
+            <!-- Section: Social media -->
+        </div>
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+            © 2020 Copyright:
+            <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+                return new bootstrap.Tooltip(tooltipTriggerEl);
+            });
+        });
+    </script>
+
+</body>
+
+</html>
