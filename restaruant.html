@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -273,3 +274,280 @@
     </script>
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Homepage</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            text-align: center;
+        }
+
+        #restaurant-name {
+            font-size: 2.5em;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .nav-menu {
+            background-color: #333;
+            padding: 10px;
+        }
+        .nav-menu a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        .nav-menu a:hover {
+            color: #ffcc00;
+        }
+
+        .menu-card {
+            width: 60%;
+            margin: 20px auto;
+            padding: 15px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            background-color: #fff;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #ffcc00;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            margin: 10px;
+            cursor: pointer;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            min-width: 200px;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+            z-index: 1;
+            text-align: left;
+            padding: 10px;
+        }
+
+        .dropdown-content img {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            margin-right: 10px;
+            border-radius: 5px;
+        }
+
+        .dropdown-content div {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .dropdown-content div span {
+            flex-grow: 1;
+        }
+
+        .dropdown-content div .price {
+            color: #ffcc00;
+            font-weight: bold;
+        }
+
+        ol {
+            list-style-type: upper-roman;
+            padding-left: 20px;
+            text-align: left;
+            display: inline-block;
+        }
+
+        ol li {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="restaurant-name">Gourmet Delight</h1>
+
+    <div class="nav-menu">
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#contact">Contact Us</a>
+        <a href="https://example.com" target="_blank">Visit Our Blog</a>
+    </div>
+
+    <section id="specialties">
+        <h2>Our Specialties</h2>
+        <ol>
+            <li class="dropdown">
+                Italian Cuisine
+                <div class="dropdown-content">
+                    <div>
+                        <img src="https://via.placeholder.com/50" alt="Margherita Pizza">
+                        <span>Margherita Pizza</span>
+                        <span class="price">₹900</span>
+                    </div>
+                    <div>
+                        <img src="https://via.placeholder.com/50" alt="Spaghetti Carbonara">
+                        <span>Spaghetti Carbonara</span>
+                        <span class="price">₹850</span>
+                    </div>
+                    <div>
+                        <img src="https://via.placeholder.com/50" alt="Lasagna">
+                        <span>Lasagna</span>
+                        <span class="price">₹950</span>
+                    </div>
+                </div>
+            </li>
+            <li class="dropdown">
+                Indian Spices
+                <div class="dropdown-content">
+                    <div>
+                        <img src="https://via.placeholder.com/50" alt="Butter Chicken">
+                        <span>Butter Chicken</span>
+                        <span class="price">₹1,125</span>
+                    </div>
+                    <div>
+                        <img src="https://via.placeholder.com/50" alt="Palak Paneer">
+                        <span>Palak Paneer</span>
+                        <span class="price">₹700</span>
+                    </div>
+                    <div>
+                        <img src="https://via.placeholder.com/50" alt="Biryani">
+                        <span>Biryani</span>
+                        <span class="price">₹800</span>
+                    </div>
+                </div>
+            </li>
+            <li class="dropdown">
+                Chinese Delights
+                <div class="dropdown-content">
+                    <div>
+                        <img src="https://via.placeholder.com/50" alt="Kung Pao Chicken">
+                        <span>Kung Pao Chicken</span>
+                        <span class="price">₹975</span>
+                    </div>
+                    <div>
+                        <img src="https://via.placeholder.com/50" alt="Fried Rice">
+                        <span>Fried Rice</span>
+                        <span class="price">₹650</span>
+                    </div>
+                    <div>
+                        <img src="https://via.placeholder.com/50" alt="Spring Rolls">
+                        <span>Spring Rolls</span>
+                        <span class="price">₹500</span>
+                    </div>
+                </div>
+            </li>
+            <li class="dropdown">
+                French Pastries
+                <div class="dropdown-content">
+                    <div>
+                        <img src="https://via.placeholder.com/50" alt="Croissant">
+                        <span>Croissant</span>
+                        <span class="price">₹200</span>
+                    </div>
+                    <div>
+                        <img src="https://via.placeholder.com/50" alt="Éclair">
+                        <span>Éclair</span>
+                        <span class="price">₹150</span>
+                    </div>
+                    <div>
+                        <img src="https://via.placeholder.com/50" alt="Macaron">
+                        <span>Macaron</span>
+                        <span class="price">₹120</span>
+                    </div>
+                </div>
+            </li>
+            <li class="dropdown">
+                Mexican Tacos
+                <div class="dropdown-content">
+                    <div>
+                        <img src="https://via.placeholder.com/50" alt="Tacos al Pastor">
+                        <span>Tacos al Pastor</span>
+                        <span class="price">₹300</span>
+                    </div>
+                    <div>
+                        <img src="https://via.placeholder.com/50" alt="Chiles Rellenos">
+                        <span>Chiles Rellenos</span>
+                        <span class="price">₹350</span>
+                    </div>
+                    <div>
+                        <img src="https://via.placeholder.com/50" alt="Enchiladas">
+                        <span>Enchiladas</span>
+                        <span class="price">₹400</span>
+                    </div>
+                </div>
+            </li>
+        </ol>
+    </section>
+
+    <section id="menu" class="menu-card">
+        <h2>Menu</h2>
+        <table>
+            <tr>
+                <th>Dish Name</th>
+                <th>Price</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>Margherita Pizza</td>
+                <td>₹900</td>
+                <td>Classic Italian pizza with fresh basil and mozzarella.</td>
+            </tr>
+            <tr>
+                <td>Butter Chicken</td>
+                <td>₹1,125</td>
+                <td>Indian creamy tomato-based chicken curry.</td>
+            </tr>
+            <tr>
+                <td>Kung Pao Chicken</td>
+                <td>₹975</td>
+                <td>Spicy Chinese stir-fry with peanuts and chili peppers.</td>
+            </tr>
+        </table>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const dropdowns = document.querySelectorAll('.dropdown');
+            dropdowns.forEach(dropdown => {
+                dropdown.addEventListener('click', function() {
+                    const content = this.querySelector('.dropdown-content');
+                    if (content.style.display === 'block') {
+                        content.style.display = 'none';
+                    } else {
+                        content.style.display = 'block';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+>>>>>>> add-folder
